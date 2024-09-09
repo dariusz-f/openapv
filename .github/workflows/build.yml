@@ -22,7 +22,7 @@ jobs:
           cmake --build ${{github.workspace}}/build
 
       - name: Tar files
-        run: tar -cvf build-pc.tar ${{github.workspace}}
+        run: tar -cvf build-pc.tar .
       
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
