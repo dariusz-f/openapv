@@ -66,8 +66,8 @@ jobs:
 
       - name: Debug
         run: |
+          tar -xvf build-pc.tar
           tree
-          ls -l build/bin/
           
       - name: Run tests for PC
         run: |
