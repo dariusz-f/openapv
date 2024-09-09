@@ -15,8 +15,6 @@ jobs:
 
       - name: Set up CMake
         uses: jwlawson/actions-setup-cmake@v2
-        with:
-          cmake-version: '3.2.x'
 
       - name: Build PC
         run: |
@@ -31,8 +29,6 @@ jobs:
 
       - name: Set up CMake
         uses: jwlawson/actions-setup-cmake@v2
-        with:
-          cmake-version: '3.2.x'
 
       - name: Install ARM toolchain
         run: |
@@ -56,8 +52,6 @@ jobs:
 
       - name: Set up CMake
         uses: jwlawson/actions-setup-cmake@v2
-        with:
-          cmake-version: '3.2.x'
 
       - name: Run tests for PC
         working-directory: ${{github.workspace}}/build
