@@ -61,6 +61,11 @@ jobs:
         with:
           name: build-PC-artifacts
 
+      - name: Debug
+        run: |
+          tree
+          ls -l build/bin/
+          
       - name: Run tests for PC
         run: |
           cd build
