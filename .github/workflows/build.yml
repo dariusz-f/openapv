@@ -63,9 +63,7 @@ jobs:
 
       - name: Run tests for PC
         working-directory: ${{github.workspace}}/build
-        run: |
-          cd ${{github.workspace}}/build
-          ctest
+        run: ctest
 
       - name: Upload test results
         uses: actions/upload-artifact@v4
