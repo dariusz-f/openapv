@@ -25,7 +25,7 @@ jobs:
       run: |
         mkdir build-android
         cd build-android
-        cmake -DCMAKE_TOOLCHAIN_FILE=$NDK_HOME/build-android/cmake/android.toolchain.cmake \
+        cmake -DCMAKE_TOOLCHAIN_FILE=$NDK_HOME/build/cmake/android.toolchain.cmake \
               -DANDROID_ABI=${{ matrix.android-abi }} \
               -DANDROID_PLATFORM=android-21 ..
         make
